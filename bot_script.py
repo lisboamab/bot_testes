@@ -1,13 +1,13 @@
 from selenium import webdriver
 from pyautogui import press
 
-numero_de_recargas = int(input("Digite o número de vezes que você quer recarregar: "))
+numero_repeticoes = int(input("Quantas vezes você que recarregar a página? "))
 
-site = input("Digite o site desejado ")
+site = input("Qual site você quer acessar? ")
 
 navegador = webdriver.Chrome()
 
 navegador.get(site)
 
-for _ in range(numero_de_recargas):
-    press('F5')
+for _ in range(numero_repeticoes):
+    press("F5")
