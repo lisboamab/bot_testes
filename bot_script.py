@@ -3,7 +3,9 @@ from pyautogui import press
 
 navegador = webdriver.Chrome()
 
-navegador.get("https://dc-full-stack.github.io/Site-da-Turma/pages/modulo01.html")
+navegador.get(input("Digite o site desejado "))
 
-for _ in range(1000):
+numero_de_recargas = int(input("Digite o número de vezes que você quer recarregar: "))
+
+for _ in range():
     press('F5')
